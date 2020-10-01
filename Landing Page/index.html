@@ -97,6 +97,26 @@
 			top: 275%;
 		}
 
+		#gameMenuBackground {
+			position: absolute;
+			top: 15.25%;
+			left: 18.4%;
+		}
+
+		#gameMenuTitle {
+			position: absolute;
+			top: 16.5%;
+			left: 19.5%;
+			z-index: 100;
+		}
+
+		#gameCancelButton {
+			position: absolute;
+			top: 17.15%;
+			right: 23%;
+			z-index: 100;
+		}
+
 	</style>
 </head>
 
@@ -109,7 +129,7 @@
 	<div class="rightBar">
 		<img src="rightBar.png" id="rightbarIcon" alt="Image Error" width="18%" height="89%">
 		<input type="image" src="./Icons/newServer.png" id="newServer" alt="Add a New Server" width="15%">
-		<input type="image" src="./Icons/games.png" id="gameIcon" alt="New Game" width="15%" onclick="location.replace('games.html')">
+		<input type="image" src="./Icons/games.png" id="gameIcon" alt="New Game" width="15%" onclick="l">
 		<input type="image" src="./Icons/profile.png" id="userIcon" alt="View Profile" width="15%">
 		<input type="image" src="./Icons/settings.png" id="settingsIcon" alt="Settings" width="12.5%">
 	</div>
@@ -124,6 +144,12 @@
 		<input type="image" src="./Icons/paperclip.png" id="paperclipIcon" alt="Upload" width="3%">
 	</div>
 
+	<div class="gameMenuOverlay">
+		<img src="gameMenuTitle.png" alt="Game Menu" id="gameMenuTitle" width="17.5%">
+		<input type="image" src="./Icons/cancelButton.png" id="gameCancelButton" alt="Cancel" width="2.6%">
+		<img src="gameBackground.png" id="gameMenuBackground" width="60%">
+		<input type="image" src="./Icons/tetrisIcon.png" id="gameCancelButton" alt="Cancel" width="7.5%">
+	</div>
 </body>
 
 </html>
