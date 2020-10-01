@@ -4,15 +4,20 @@
 	<title>Jason Phun Club</title>
 	<link rel="icon" href="smallIcon.png" type="image/icon type">
 	<style>
-		header {
-			background-color: grey;
+		#topBarTitle {
 			position: absolute;
-			text-align: left;
+			left: 0px;
+			top: 0px;
+			z-index: 100;
+		}
+
+		header {
+			position: absolute;
 			width: 100%;
 			height: 11%;
 			top: 0px;
 			left: 0px;
-			font-family: Arial, sans-serif;
+			opacity: 0.9;
 		}
 
 		#rightbarIcon {
@@ -21,6 +26,7 @@
 			right: 0px;
 			top: 11%;
 			margin-right: 0%;
+			opacity: 0.7;
 		}
 
 		#newServer {
@@ -95,9 +101,11 @@
 </head>
 
 <body>
+	<img src="topBar.png" id="topBarTitle" alt="Jason Phun Club" height="10%">
 	<header>
-		<img src="topBar.png" id="topbarIcon" alt="Jason Phun Club" height="100%" width="100%">
+		<img src="topBarBack.png" id="topbarIcon" height="100%" width="100%">
 	</header>
+	
 	<div class="rightBar">
 		<img src="rightBar.png" id="rightbarIcon" alt="Image Error" width="18%" height="89%">
 		<input type="image" src="./Icons/newServer.png" id="newServer" alt="Add a New Server" width="15%">
