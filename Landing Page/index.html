@@ -97,6 +97,7 @@
 			top: 275%;
 		}
 
+
 		#gameMenuBackground {
 			position: absolute;
 			top: 15.25%;
@@ -117,6 +118,50 @@
 			z-index: 100;
 		}
 
+		#tetrisIcon {
+			position: absolute;
+			top: 27.5%;
+			left: 22%;
+			z-index: 100;
+		}
+
+		#pongIcon {
+			position: absolute;
+			top: 55%;
+			left: 22%;
+			z-index: 100;
+		}
+
+
+		#snakeIcon {
+			position: absolute;
+			top: 27.5%;
+			left: 42.25%;
+			z-index: 100;
+		}
+
+		#aiIcon {
+			position: absolute;
+			top: 55%;
+			left: 42.25%;
+			z-index: 100;
+		}
+
+
+		#blackjackIcon {
+			position: absolute;
+			top: 27.5%;
+			left: 62.75%;
+			z-index: 100;
+		}
+
+		#triviaIcon {
+			position: absolute;
+			top: 55%;
+			left: 62.75%;
+			z-index: 100;
+		}
+
 	</style>
 </head>
 
@@ -129,7 +174,7 @@
 	<div class="rightBar">
 		<img src="rightBar.png" id="rightbarIcon" alt="Image Error" width="18%" height="89%">
 		<input type="image" src="./Icons/newServer.png" id="newServer" alt="Add a New Server" width="15%">
-		<input type="image" src="./Icons/games.png" id="gameIcon" alt="New Game" width="15%" onclick="l">
+		<input type="image" src="./Icons/games.png" id="gameIcon" alt="New Game" width="15%" onclick="myFunction()">
 		<input type="image" src="./Icons/profile.png" id="userIcon" alt="View Profile" width="15%">
 		<input type="image" src="./Icons/settings.png" id="settingsIcon" alt="Settings" width="12.5%">
 	</div>
@@ -144,12 +189,34 @@
 		<input type="image" src="./Icons/paperclip.png" id="paperclipIcon" alt="Upload" width="3%">
 	</div>
 
-	<div class="gameMenuOverlay">
+	<div id="gameMenuOverlay">
 		<img src="gameMenuTitle.png" alt="Game Menu" id="gameMenuTitle" width="17.5%">
-		<input type="image" src="./Icons/cancelButton.png" id="gameCancelButton" alt="Cancel" width="2.6%">
-		<img src="gameBackground.png" id="gameMenuBackground" width="60%">
-		<input type="image" src="./Icons/tetrisIcon.png" id="gameCancelButton" alt="Cancel" width="7.5%">
+		<input type="image" src="./Icons/cancelButton.png" id="gameCancelButton" alt="Cancel" width="2.6%" onclick="myFunction2()">
+		<img src="gameBackground.png" id="gameMenuBackground" width="60%" height="65%">
+		<input type="image" src="./Icons/tetrisIcon.png" id="tetrisIcon" alt="tetris" width="12%">
+		<input type="image" src="./Icons/pongIcon.png" id="pongIcon" alt="pong" width="12%">
+		<input type="image" src="./Icons/snakeIcon.png" id="snakeIcon" alt="snake" width="12%">
+		<input type="image" src="./Icons/aiIcon.png" id="aiIcon" alt="pong" width="12%">
+		<input type="image" src="./Icons/blackjackIcon.png" id="blackjackIcon" alt="tetris" width="12%">
+		<input type="image" src="./Icons/triviaIcon.png" id="triviaIcon" alt="pong" width="12%">
 	</div>
+	<script>
+		var x = document.getElementById("gameMenuOverlay");
+		x.style.display = "none"
+		function myFunction() {
+  			var x = document.getElementById("gameMenuOverlay");
+  			if (x.style.display === "none") {
+    			x.style.display = "block";
+  			} else {
+   				x.style.display = "none";
+  			}
+		}
+
+		function myFunction2() {
+			var x = document.getElementById("gameMenuOverlay")
+			x.style.display = "none"
+		}
+	</script>
 </body>
 
 </html>
